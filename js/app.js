@@ -2,12 +2,13 @@
 // .then(resp => resp.json())
 // .then(data => console.log(data));
 
-// let carouselImage = document.getElementById('images-carousel').src;
+let carouselImage = document.getElementById('images-carousel');
 const nextBtn = document.getElementById('btn-next');
 
 
 ;let changeIt = () => {
-    document.getElementById('images-carousel').src = 'https://api.lorem.space/image/furniture';
+    carouselImage.innerHTML = '';
+    carouselImage.innerHTML = `<img  src="https://api.lorem.space/image/furniture" alt="">`;
 }
 
 setInterval( () => {
